@@ -1,0 +1,13 @@
+.doc-body {
+    padding: 30px;
+    height: 100%;
+
+    @include lg-screen {
+        margin-left: clamp(15px, 4vw, 30px);
+    }
+
+    &--alt {
+        padding: 30px;
+        height: 100%;
+    }
+}

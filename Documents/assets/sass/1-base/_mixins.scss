@@ -1,0 +1,88 @@
+//Media Breakpoint for Each Device
+
+//Extra Small Screen
+@mixin xxs-screen {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+//Extra Small Screen
+@mixin xs-screen {
+  @media screen and (min-width: 375px) {
+    @content;
+  }
+}
+
+//Iphone Plus
+@mixin iphn-plus {
+  @media screen and (min-width: 400px) {
+    @content;
+  }
+}
+
+//Iphone rotate
+@mixin iphn-screen {
+  @media screen and (min-width: 568px) {
+    @content;
+  }
+}
+//Small Screen (min-width: 576)
+@mixin sm-screen {
+  @media screen and (min-width: 576px) {
+    @content;
+  }
+}
+//Medium Screen (min-width: 768)
+@mixin md-screen {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+//Large Screen (min-width: 992)
+@mixin lg-screen {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}
+//Xtra Large Screen (min-width: 1200)
+@mixin xl-screen {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+//Xtra Large Screen i (min-width: 1366)
+@mixin xli-screen {
+  @media screen and (min-width: 1366px) {
+    @content;
+  }
+}
+//Xtra Large Screen ii (min-width: 1400)
+@mixin xlii-screen {
+  @media screen and (min-width: 1400px) {
+    @content;
+  }
+}
+//Xtra Large Screen iii (min-width: 1440)
+@mixin xliii-screen {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+//Xtra Large Screen iv (min-width: 1600)
+@mixin xliv-screen {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
+//Xtra Large Screen v (min-width: 1680)
+@mixin xlv-screen {
+  @media screen and (min-width: 1680px) {
+    @content;
+  }
+}
+//Xtra Large Screen xxl (min-width: 1920)
+@mixin xxl-screen {
+  @media screen and (min-width: 1920px) {
+    @content;
+  }
+}

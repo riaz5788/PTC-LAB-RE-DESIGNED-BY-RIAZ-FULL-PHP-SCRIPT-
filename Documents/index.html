@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PTCLab - Pay Per Click Platform</title>
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" sizes="16x16" type="image/png" />
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css" />
+    <!-- fontawesome 5  -->
+    <link rel="stylesheet" href="assets/css/lib/font-awesome.css" />
+    <!-- lineawesome font -->
+    <link rel="stylesheet" href="assets/css/lib/line-awesome.css" />
+    <!-- Simplebar Js  -->
+    <link rel="stylesheet" href="assets/css/lib/simplebar.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#docNav" data-bs-offset="50">
+
+    
+    <header class="mobile-header">
+  <div class="container">
+    <div class="row g-4 align-items-center justify-content-between">
+      <div class="col-6">
+        <!-- Logo  -->
+        <a href="index.html" class="logo">
+          <img
+            src="assets/images/logo.png"
+            alt="images"
+            class="img-fluid logo__is"
+          />
+        </a>
+        <!-- Logo End -->
+      </div>
+      <div class="col-6">
+          <div class="text-end">
+            <button type="button" class="btn btn--sqr sidebar-toggler">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+              </button>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="doc">
+  <div class="doc__sidebar" id="docNav">
+    <div class="doc-logo">
+      <!-- Logo  -->
+      <a href="index.html" class="logo">
+        <img
+          src="assets/images/logo.png"
+          alt="images"
+          class="img-fluid logo__is"
+        />
+      </a>
+      <!-- Logo End -->
+    </div>
+    <nav class="doc-nav" data-simplebar>
+      <ul class="list doc-nav__list">
+        <li>
+          <a href="#introduction" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="lar la-clone"></i> <span class="d-block">introduction</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#server-req" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="las la-server"></i> <span class="d-block">server requirements</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#server-faq" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="las la-question"></i> <span class="d-block">server FAQ</span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#installation" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="las la-cog"></i> <span class="d-block">how to install </span></span> </a>
+        </li>
+        <li>
+          <a href="#activation" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="las la-check-circle"></i> <span class="d-block">how to activate </span></span>
+          </a>
+        </li>
+        <li>
+          <a href="#folder" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="las la-folder"></i> <span class="d-block">
+              folder structure
+            </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#admin-dashboard" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="las la-desktop"></i>
+              <span class="d-block">
+                admin dahshboard
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#setting" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-cogs"></i>
+              <span class="d-block">
+                general setting
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#extensions" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-plug"></i>
+              <span class="d-block">
+                extensions
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#seo" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-globe-asia"></i>
+              <span class="d-block">
+                seo manager
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#language" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-language"></i>
+              <span class="d-block">
+                language manager
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#payment-gateway" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-credit-card"></i>
+              <span class="d-block">
+                payment gateway
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#withdraw" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-bank"></i>
+              <span class="d-block">
+                withdraw
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#user-dashboard" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-user-check"></i>
+              <span class="d-block">
+                user dashboard
+              </span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#support" class="doc-nav__link nav-link">
+            <span class="list list--row align-items-center"><i class="la la-headset"></i>
+              <span class="d-block">
+                support
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="copyright">
+      <p class="m-0 text--white px-3 text-center">Copyright © <a href="https://viserlab.com/" class="t-link t-link--canvas">ViserLab</a> 2022</p>
+    </div>
+  </div>
+  <div class="doc__body">
+    <div id="introduction" class="section--sm section--first">
+      <div class="list">
+        <div class="doc-head">
+          <div class="doc-head__content">
+            <h5 class="doc-head__title">
+              PTCLab
+            </h5>
+            <span class="doc-head__sub-title">
+              Pay Per Click Platform
+            </span>
+          </div>
+        </div>
+        <div class="doc-body">
+          <ul class="list" style="--gap: 0.2rem">
+            <li><strong>Created :</strong> 2020-09-28</li>
+            <li>
+              <strong>By :</strong>
+              <a href="https://codecanyon.net/user/viserlab"
+                class="t-link"
+                >Viserlab</a
+              >
+            </li>
+            <li><strong>Email :</strong> <a class="t-link" href="mailto:support@viserlab.com">support@viserlab.com</a></li>
+          </ul>
+          <p class="mt-4 lg-text">
+            PTCLab is an laravel Based Script for Pay Per Click business. You can run your own PTC, PPC or PPV website within a minutes without any  programming knowledge. Admin able to set unlimited links from admin panel, and when user click or view those they will get paid. Its an online Earning Platform for both Site owner and User. our system is fully dynamic, Easy to use, User Friendly and 100% responsive.
+          </p>
+          <p class="mt-4 lg-text">
+            The documentation will help to understand the total system and we have tried to summarize the total process of the site here. This script comes with a very simple and easy-to-use admin panel, user panel which leads to use without any coding knowledge. Additionally, this script comes with many Automated online payment gateways to make payment easier all over the world.
+          </p>
+          <blockquote class="blockquote text--accent">
+            If needed, we will update this script continuously and come with new features and security patches. We will try to give the best user experience to all of our clients.
+          </blockquote>
+          <p class="mt-4 lg-text">
+            Thank you for purchasing <strong>PTCLab</strong>. If you have any questions or queries that are not answered in this document, please feel free to contact us via email. We will try to respond to you as soon as possible. Thank you so much.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="server-req" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Server Requirements</h5>
+                <span class="doc-head__sub-title">
+                  All server requirements are stated bellow
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4 align-items-center">
+              <div class="col-xl-4">
+                <div class="doc-body">
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>PHP Version 8.1</li>
+                    <li>MySQL Version 5.7+ or MariaDB version 10.2+</li>
+                    <li>BCMath PHP Extension</li>
+                    <li>Ctype PHP Extension</li>
+                    <li>cURL PHP Extension</li>
+                    <li>DOM PHP Extension</li>
+                    <li>Fileinfo PHP Extension</li>
+                    <li>GD PHP Extension</li>
+                    <li>JSON PHP Extension</li>
+                    <li>Mbstring PHP Extension</li>
+                    <li>OpenSSL PHP Extension</li>
+                    <li>PCRE PHP Extension</li>
+                    <li>PDO PHP Extension</li>
+                    <li>pdo_mysql PHP Extension</li>
+                    <li>Tokenizer PHP Extension</li>
+                    <li>XML PHP Extension</li>
+                    <li>allow_url_fopen()</li>
+                    <li>file_get_contents()</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-8">
+                <div class="doc-body--alt t-center">
+                  <img src="assets/images/server.png" alt="image" class="img-fluid w-100">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="server-faq" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Server FAQ</h5>
+                <span class="doc-head__sub-title">
+                  Frequently Asked Questions About Server
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row mt-4">
+              <div class="col-md-6 mb-3">
+                <div class="faq-body">
+                  <p class="mb-2 fw-bold text--canvas">
+                    Do I need VPS or a Dedicated server to run this system?
+                  </p>
+                  <p class="m-0">
+                    No, You can run this system in a shared host as well and it will run smoothly. But if you have much traffic, you may need to upgrade your server/hosting. Our codes are highly optimized to ensure the best possible performance.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="faq-body">
+                  <p class="mb-2 fw-bold text--canvas">
+                    Which hosting provider should I choose for this? Do you have any suggestions?
+                  </p>
+                  <p class="m-0">
+                    You can choose any hosting provider that provides cPanel-based hosting. cPanel is not a must, but we recommend you to have cPanel-based hosting.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="faq-body">
+                  <p class="mb-2 fw-bold text--canvas">
+                    I don't have cPanel, What should I do?
+                  </p>
+                  <p class="m-0">
+                    Nothing to worry about, Our system will work with any control panel but cPanel is easy to manage, for that we recommend cPanel-based hosting. Also, Our free Support is limited to cPanel-based hosting only.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="faq-body">
+                  <p class="mb-2 fw-bold text--canvas">
+                    Do you provide hosting as well?
+                  </p>
+                  <p class="m-0">
+                    Yes, We do. We can provide a complete solution for your hosting. We can provide <a class="t-link" href="https://viserlab.com/hosting/budget" target="_blank">budget shared hosting</a>, <a class="t-link" href="https://viserlab.com/hosting/premium" target="_blank">premium shared hosting</a>, <a class="t-link" href="https://viserlab.com/hosting/vps" target="_blank">VPS</a>, <a class="t-link" href="https://viserlab.com/hosting/dedicated" target="_blank">Dedicated servers</a>, and Cluster from various geolocation. Please contact us for more details.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="installation" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Installation</h5>
+                <span class="doc-head__sub-title">
+                  Application Installation Process
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4 align-items-center">
+              <div class="col-xl-6">
+                <div class="doc-body">
+                  <p class="lead">
+                    Installation is very easy with our Easy Installer. You can install yourself simply in few steps without any coding knowledge. We develop our installation system to make the installation process flawless and easy.
+                  </p>
+                  <p class="xl-text fw-md">Installation Steps:</p>
+                  <ul class="list list--base">
+                    <li>
+                      <p class="m-0">
+                        Upload the whole file to the server you have downloaded from download after purchase.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        Extract/Unzip the file and move all files in the <code>Files</code> folder to the main folder(where you want to install it). Make sure you have moved the <code>index.php</code> and <code>.htaccess</code> as well.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">Now please browse http://<code>your-site-url</code>/install/index.php and follow the process. Your system should be ready to use.
+                      </p>
+                    </li>
+                  </ul>
+                  
+                  <p class="xl-text mt-4">
+                    If you are still unable to install the system, please contact us. we offer free installation in cPanel-based hosting.
+                  </p>
+                  <p class="xl-text fw-md mb-2">Admin Login:</p>
+                  <ul class="list" style="--gap: 0.2rem">
+                    <li>
+                      <span class="d-block"
+                        >Admin login URL is:
+                        <strong>
+                          http://<code>your-site-url</code>/admin</strong
+                        >
+                      </span>
+                    </li>
+                    <li>
+                      <strong>Username :</strong> [as_you_set_on_installation]
+                    </li>
+                    <li>
+                      <strong>Password :</strong> [as_you_set_on_installation]
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/installation.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="activation" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Activation</h5>
+                <span class="doc-head__sub-title">
+                  Application Activation Process
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div class="col-xl-6">
+            <div class="doc-body h-auto">
+              <p>
+                After installing the system you need to activate it. When you visit the system, you will be able to see the activation page. Just provide this information to activate and run your system. Your provided information will send to ViserLab server to verify and we never collect any sensitive or confidential data.
+              </p>
+              <ul class="list list--base" style="--gap: 0.5rem">
+                <li>
+                  <p class="m-0">
+                    <strong>Purchase Code:</strong> To get purchase code <a href="https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code-" target="_blank">Click Here</a>.
+                  </p>
+                </li>
+                <li>
+                  <p class="m-0">
+                    <strong>Envato Username:</strong> Your Envato username with which you bought system.
+                  </p>
+                </li>
+                <li>
+                  <p class="m-0">
+                    <strong>Email:</strong> Provide your email for further communication.
+                  </p>
+                </li>
+              </ul>
+              <p class="mt-5">
+                <code>The purchase code(license) is for one website or domain only. Please activate the license into the correct domain(URL) to avoid any unwanted issues in the future.</code>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="doc-body--alt t-center">
+              <img src="assets/images/activation.jpg" alt="image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="folder" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Folder Structure</h5>
+                <span class="doc-head__sub-title">
+                  Application Folder Details
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="doc-body">
+              <p class="lead">
+                After installation, There will be two folders and two files will be in your main folder.
+              </p>
+              <ul class="list" style="--gap: 0.3rem">
+                <li>
+                  <span class="list list--row align-items-center">
+                    <span class="xl-text lh-1">
+                      <i class="fas fa-folder"></i>
+                    </span>
+                    <span class="lg-text d-inline-block">assets</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="list list--row align-items-center">
+                    <span class="xl-text lh-1">
+                      <i class="fas fa-folder"></i>
+                    </span>
+                    <span class="lg-text d-inline-block">core</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="list list--row align-items-center">
+                    <span class="xl-text lh-1">
+                      <i class="fas fa-file-code"></i>
+                    </span>
+                    <span class="lg-text d-inline-block">.htaccess</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="list list--row align-items-center">
+                    <span class="xl-text lh-1">
+                      <i class="fas fa-file-code"></i>
+                    </span>
+                    <span class="lg-text d-inline-block">index.php</span>
+                  </span>
+                </li>
+              </ul>
+              <ul class="list list--base mt-4">
+                <li>
+                  <p class="m-0">
+                    On the <strong>"assets" </strong> folder, We keep all
+                    kinds of assets like <strong>CSS, JS, Images</strong>. If
+                    you want To edit or change anything over CSS or js, please
+                    have a look at this folder.
+                  </p>
+                </li>
+                <li>
+                  <p class="m-0">
+                    On the <strong>"core"</strong> folder, We keep the core of
+                    Laravel and we maintain full MVC structure on this
+                    project.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="admin-dashboard" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Admin Dashboard</h5>
+                <span class="doc-head__sub-title"> Dashboard overview </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p>
+                    The items come with the latest Secure admin panel with a unique admin Dashboard. You can check all information and process by login on to your dashboard. You can manage all the basic information from here where the website is managed.
+                  </p>
+                  <p>
+                    You'll be able to see a full overview of your system from this dashboard like how many users you've, how many deposits are made to  your system, how many withdrawals are made in your system and etc. Also, you can compare the transactions of your system by seeing the graph.
+                  </p>
+                  <p class="m-0 lead">
+                    <strong>Note: </strong> You can manage the everything from this dashboard! No need to edit the code or database.
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/dashboard.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="setting" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">General Settings</h5>
+                <span class="doc-head__sub-title">
+                  General Settings overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p class="lead">
+                    You can set the basic information of your website from the general setting.
+                  </p>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <p class="m-0">
+                        <strong>Site Title:</strong> The name of your website.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Currency:</strong> The base currency of your website.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Currency Symbol:</strong> The symbol of base currency of your website.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Timezone:</strong> Timezone of your application.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Base Color:</strong> The base color of your website. this should be a light color.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Secondary Color: </strong> The secondary color of your website. this should be a dark color.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Force Secure Password : </strong> If this module enabled, users must have to put a strong password.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Agree Policy : </strong> If this module enabled, users must have to agree with the system policies during registration process.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>User Registration : </strong> You can enable or disable the registration.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Force SSL : </strong> If you enable this, that means forcing HTTPS on all traffic.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>KYC Verification : </strong> If this module enabled, users must have to submit KYC details after registration.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Email Verification : </strong> You can enable or disable the Email Verification system.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Email Notification :</strong> You can enable or disable the Email Notification system.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>SMS Verification :</strong> You can enable or disable the SMS Verification system.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>SMS Notification :</strong> You can enable or disable the SMS Notification system.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/setting.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="extensions" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Extension Manager</h5>
+                <span class="doc-head__sub-title">
+                  Extension Manager overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p class="lead">
+                    It is a unique feature for you. We have added all the important and required plugins in our admin panel. You will have full control over these plugins and you can configure them as you want.
+                  </p>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <p class="m-0">
+                        <strong>Google Recaptcha 2:</strong> Google Recaptcha 2 is used for protect robotic request to your system. To get google recaptcha 2 credentials <a href="https://www.google.com/recaptcha/admin/create" target="_blank">Click Here</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Tawk.to:</strong> Tawk.to is third party live chat platform. You can enable this extension by providing api key from <a href="https://www.tawk.to/" target="_blank">tawk.to</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Custom Captcha:</strong> This extension also protect robotic attack to your system. This is not third party extension. This is internal extension of our system
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Google Analytics:</strong> This extension is used to track your visitors. Overview of your web page and visitors are tracked by google analytics. To get credentials of google analytics, <a href="https://analytics.google.com" target="_blank">Click Here</a>
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Facebook Comment:</strong> Facebook comment is used to manage blog's comments of our system. If you enable this, a facebook comment box will be shown in blog page. To get credentials of facebook comment, <a href="https://developers.facebook.com/" target="_blank">Click Here</a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/plugin.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="seo" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">SEO Manager</h5>
+                <span class="doc-head__sub-title">
+                  SEO Manager overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p>
+                    SEO now becomes a very important part of any website, and that is why we have added a simple but powerful SEO manager tool in the admin panel. Now you can set your SEO keywords, meta tag, and OG image from your admin panel without paying anyone. SEO setting is just one-click away.
+                  </p>
+
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <p class="m-0">
+                        <strong>SEO Image:</strong> This image will show when you'll share the site link anywhere.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Meta Keywords:</strong> Put here some keywords related to your site. This will help to rank your site to search engines.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Meta Description:</strong> This description will show in search engines. Also, related descriptions will help to rank your website in search engines.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Social Title:</strong> This title will show when sharing the link to social media.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Social Description:</strong> This description will show below the title when sharing the link to social media.
+                      </p>
+                    </li>
+                  </ul>
+
+
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/seo.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="language" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Language Manager</h5>
+                <span class="doc-head__sub-title">
+                  Built-In Language Manager overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p>
+                    Nowadays, many website owners want to localize their websites. They want to set many languages so users can choose and see the website in their mother language. But they can not set as many other software providers don't give that option Built-in and they charge a high amount of money to set that, In our product, you need not to pay any single penny for that. we include a unique language manager where you can easily set any language within a very short time.
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/lang.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="payment-gateway" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Payments Gateways</h5>
+                <span class="doc-head__sub-title">
+                  Payments Gateways overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p>
+                    The main problem of online business is accepting the payments. And we tried our level best to solve this problem. We have added 20+ Automated online payments gateways! YES, 20+ gateways. You can control all of them from the admin panel and you do not need any coding knowledge for that. Additionally, you can set manual gateways as well.
+                  </p>
+                  <h5>How to setup automatic gateway</h5>
+                  <hr>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 1:</strong> Enable a gateway that you want
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 2:</strong> Click the edit button and go to the edit page of this gateway.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 3:</strong> Provide required credentials.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 4:</strong> Select a currency and click add new option. This select box is shown at the top of the page
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 5:</strong> Provide currency title minimum and maximum deposit range, fixed and percentage charge, and rate to your site currency.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 6:</strong> Click the submit button and your gateway is ready to receive payments if everything is ok.
+                      </p>
+                    </li>
+                  </ul>
+                  <h5>How to setup manual gateway</h5>
+                  <hr>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 1:</strong> Click the "Add New" button. Now you'll be able to see a form to setup this gateway
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 2:</strong> Provide basic required information.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 3:</strong> Provide instruction to users. This instruction will show to users. This instruction is referrers that how to send the money.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 4:</strong> Set some user data that you want. This is the proof of payment. After sending the payment you've to confirm that. So that you need payment proof. That's why you need to set up this section.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/automatic_gateway.jpg"
+                    alt="image"
+                    class="img-fluid mb-3"
+                  />
+                  <img
+                    src="assets/images/manual_gateway.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="withdraw" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Withdrawal Method</h5>
+                <span class="doc-head__sub-title">
+                  Withdraw method overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p class="lead">
+                    Withdraw process of this system is manual. That means you've to add a withdraw method and user will send you withdraw requests. You've to confirm that manually
+                  </p>
+                  <h5>How to setup withdraw method</h5>
+                  <hr>
+                  <ul class="list list--base" style="--gap: 0.5rem">
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 1:</strong> Click the "Add New" button. Now you'll be able to see a form to setup this method
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 2:</strong> Provide basic required information.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 3:</strong> Provide instruction to users. This instruction will show to users. This instruction is referrers that how to make request for withdrawal.
+                      </p>
+                    </li>
+                    <li>
+                      <p class="m-0">
+                        <strong>Step 4:</strong> Set some user data that you want. This is the proof of payment. After submitting the request you've to confirm that. So that you need a proof. That's why you need to set up this section.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/withdraw.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="user-dashboard" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">User Dashboard</h5>
+                <span class="doc-head__sub-title">
+                  User Dashboard overview
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid p-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p class="m-0">
+                    The User Dashboard is designed for users. Users can manage everything on their dashboard, according to the pricing plan, they will be able to buy packages, can withdraw amounts, and can see the wallet.
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="doc-body--alt t-center">
+                  <img
+                    src="assets/images/user_dashboard.jpg"
+                    alt="image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="support" class="section--sm">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <div class="col-12">
+            <div class="doc-head">
+              <div class="doc-head__content">
+                <h5 class="doc-head__title">Support</h5>
+                <span class="doc-head__sub-title">
+                  Support information details
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="row g-4">
+              <div class="col-xl-6">
+                <div class="doc-body h-auto">
+                  <p>
+                    Once again, thank you so much for purchasing this Script. As I said at the beginning, I'd be glad to help you if you have any  questions relating to this Script. No guarantees, but I'll do my best to assist. If you have any queries, please feel free to contact us at Support Center.
+                  </p>
+                  <p class="m-0 xl-text">
+                    Email Us:
+                    <a
+                      href="https://viserlab.com/support"
+                      class="t-link"
+                    >
+                      https://viserlab.com/support
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- jQuery library -->
+    <script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap 5 js -->
+    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Simplebar Js  -->
+    <script src="assets/js/lib/simplebar.js"></script>
+    <!-- main js -->
+    <script src="assets/js/app.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.mobile-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: var(--base);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    @include lg-screen {
+        display: none;
+    }
+}

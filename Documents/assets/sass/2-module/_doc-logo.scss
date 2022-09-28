@@ -1,0 +1,8 @@
+.doc-logo {
+    display: none;
+    padding: 20px 15px;
+    background: hsl(var(--light)/.05);
+    @include lg-screen {
+        display: block;
+    }
+}

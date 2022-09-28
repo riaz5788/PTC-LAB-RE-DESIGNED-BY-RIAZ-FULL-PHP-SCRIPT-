@@ -1,0 +1,29 @@
+.sidebar-toggler {
+    border-radius: 2px;
+    background: var(--accent);
+    color: hsl(var(--light));
+    font-size: 20px;
+    line-height: 1;
+
+    &:hover {
+        background: var(--accent);
+        color: hsl(var(--light));
+    }
+
+    &.active {
+        background: hsl(var(--light));
+        color: var(--accent);
+
+        .fa-times {
+            display: block;
+        }
+
+        .fa-bars {
+            display: none;
+        }
+    }
+
+    .fa-times {
+        display: none;
+    }
+}

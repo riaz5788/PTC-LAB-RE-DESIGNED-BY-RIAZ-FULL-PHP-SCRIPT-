@@ -1,0 +1,30 @@
+.doc {
+    position: relative;
+    @include lg-screen {
+        display: flex;
+    }
+
+    &__sidebar {
+        width: 250px;
+        height: calc(100vh - 66px);
+        background: var(--base);
+        position: fixed;
+        top: 66px;
+        left: 0;
+        transform: translateX(-100%);
+        transition: all .3s ease;
+        z-index: 99;
+        @include lg-screen {
+            flex-shrink: 0;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            transform: translateX(0);
+        }
+    }
+    &__body {
+        @include lg-screen {
+            flex-grow: 1;
+        }
+    }
+}

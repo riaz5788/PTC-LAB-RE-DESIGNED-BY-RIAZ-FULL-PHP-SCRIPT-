@@ -1,0 +1,30 @@
+.bg--primary {
+  background: hsl(var(--primary));
+}
+.bg--secondary {
+  background: hsl(var(--secondary));
+}
+.bg--success {
+  background:hsl(var(--success));
+}
+.bg--danger {
+  background: hsl(var(--danger));
+}
+.bg--warning {
+  background: hsl(var(--warning));
+}
+.bg--info {
+  background: hsl(var(--info));
+}
+.bg--dark {
+  background: hsl(var(--dark));
+}
+.bg--light {
+  background-color: hsl(var(--white));
+}
+.bg--base {
+  background-color: var(--base);
+}
+.bg--accent {
+  background: hsl(var(--accent));
+}

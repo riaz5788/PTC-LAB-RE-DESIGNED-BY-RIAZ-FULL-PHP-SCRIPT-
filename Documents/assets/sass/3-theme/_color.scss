@@ -1,0 +1,36 @@
+.text--primary {
+  color: hsl(var(--primary));
+}
+.text--secondary {
+  color: hsl(var(--secondary));
+}
+.text--success {
+  color: hsl(var(--success));
+}
+.text--danger {
+  color: hsl(var(--danger));
+}
+.text--warning {
+  color: hsl(var(--warning));
+}
+.text--info {
+  color: hsl(var(--info));
+}
+.text--dark {
+  color: hsl(var(--dark));
+}
+.text--white {
+  color: hsl(var(--white));
+}
+.text-clr {
+  color: hsl(var(--dark-400));
+}
+.heading-clr {
+  color: hsl(var(--dark));
+}
+.text--base {
+  color: var(--base);
+}
+.text--accent {
+  color: var(--accent);
+}

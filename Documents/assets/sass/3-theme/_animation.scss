@@ -1,0 +1,179 @@
+//Animation
+@keyframes btnVideo {
+  0% {
+    box-shadow: 0 0 0 0 hsl(var(--warning));
+  }
+  50% {
+    box-shadow: 0 0 0 10px hsl(var(--warning) / 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 20px hsl(var(--warning) / 0.04);
+  }
+}
+//Circle
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-60px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-60px) rotate(-360deg);
+  }
+}
+//Go Right
+@keyframes goright {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+//Go Left
+@keyframes goleft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-80px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+// Go Top Right
+@keyframes topRight {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(80px, -80px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+// Go To Left
+@keyframes topLeft {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(80px, 80px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+//Circle & Rotate
+@keyframes circlerotate {
+  0% {
+    transform: rotate(0deg) translate(-60px);
+  }
+  100% {
+    transform: rotate(360deg) translate(-60px);
+  }
+}
+//CRotate
+@keyframes rotates {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+//Go Top
+@keyframes goTop {
+  0% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(-20px) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+}
+// Heart Beat
+@keyframes heartBeat {
+  0% {
+    outline: 0 solid rgba(var(--r), var(--g), var(--b), 0.5);
+  }
+  25% {
+    outline: 5px solid rgba(var(--r), var(--g), var(--b), 0.5);
+  }
+  50% {
+    outline: 10px solid rgba(var(--r), var(--g), var(--b), 0.5);
+  }
+  75% {
+    outline: 5px solid rgba(var(--r), var(--g), var(--b), 0.5);
+  }
+  100% {
+    outline: 0 solid rgba(var(--r), var(--g), var(--b), 0.5);
+  }
+}
+// Button Effects
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}

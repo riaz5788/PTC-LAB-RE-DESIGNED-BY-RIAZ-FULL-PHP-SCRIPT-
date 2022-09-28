@@ -1,0 +1,68 @@
+.t-heading-font {
+  font-family: var(--heading-font);
+}
+
+.t-body-font {
+  font-family: var(--body-font);
+}
+
+.t-link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &--primary {
+    &:hover {
+      color: hsl(var(--primary));
+    }
+  }
+
+  &--danger {
+    &:hover {
+      color: hsl(var(--danger));
+    }
+  }
+
+  &--success {
+    &:hover {
+      color: hsl(var(--success));
+    }
+  }
+
+  &--info {
+    &:hover {
+      color: hsl(var(--info));
+    }
+  }
+
+  &--light {
+    &:hover {
+      color: hsl(var(--white));
+    }
+  }
+
+  &--base {
+    &:hover {
+      color: var(--base);
+    }
+  }
+
+  &--accent {
+    color: var(--accent);
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.t-short-para {
+  max-width: 55ch;
+}
+.t-center {
+  display: grid;
+  place-items: center;
+}

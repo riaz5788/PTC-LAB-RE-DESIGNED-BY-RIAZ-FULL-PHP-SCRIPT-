@@ -1,0 +1,21 @@
+.doc-head {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__content {
+        flex-grow: 1;
+        padding: 15px 30px;
+        background: var(--accent);
+    }
+
+    &__title {
+        margin: 0;
+        color: hsl(var(--white));
+    }
+
+    &__sub-title {
+        display: block;
+        color: hsl(var(--dark-300));
+    }
+}
